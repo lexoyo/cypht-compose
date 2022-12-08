@@ -9,4 +9,4 @@ services:
     volumes:
       - ./cypht/users:/var/lib/hm3/users
     ports:
-      - "80:80"
+      - 80
