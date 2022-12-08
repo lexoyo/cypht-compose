@@ -1,0 +1,12 @@
+version: '3'
+services:
+  db:
+    image: mariadb:10
+    volumes:
+      - ./db:/var/lib/mysql
+  cypht:
+    image: sailfrog/cypht-docker:latest
+    volumes:
+      - ./cypht/users:/var/lib/hm3/users
+    ports:
+      - "80:80"
